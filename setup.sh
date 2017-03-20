@@ -8,7 +8,8 @@ cd urbanterror43
 wget https://raw.githubusercontent.com/adityakalia/ut/master/UrTUpdater_Ded.sh
 chmod +x UrTUpdater_Ded.sh
 ./UrTUpdater_Ded.sh
-chown -R urt:urt urbanterror43/
-chmod a+x urbanterror43/Quake3-UrT-Ded.i386
-
-cd urbanterror43/q3ut4/
+chown -R urt:urt ../urbanterror43/
+chmod a+x Quake3-UrT-Ded.x86_64
+wget https://raw.githubusercontent.com/adityakalia/ut/master/server.cfg
+wget https://raw.githubusercontent.com/adityakalia/ut/master/start.sh
+chmod +x start.sh
