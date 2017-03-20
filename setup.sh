@@ -1,12 +1,13 @@
-useradd -m urt
-su - urt
-wget urbanterror.info/urbanterror/UrbanTerror_43.tar.gz
+sudo apt-get update
+sudo apt-get install libxml2-utils
+sudo useradd -m urt
+sudo su - urt
 cd ~
-tar -xvf UrbanTerror43_ded.tar.gz
-cd UrbanTerror43/
-./UrTUpdater_Ded.i386
-mv UrbanTerror43/ urbanterror43/
-cd urbanterror43/
+mkdir urbanterror43
+cd urbanterror43
+wget https://raw.githubusercontent.com/adityakalia/ut/master/UrTUpdater_Ded.sh
+chmod +x UrTUpdater_Ded.sh
+./UrTUpdater_Ded.sh
 chown -R urt:urt urbanterror43/
 chmod a+x urbanterror43/Quake3-UrT-Ded.i386
 
